@@ -1,104 +1,72 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mir Abdullah | Web Developer</title>
-  <style>
-    body {
-      font-family: "Poppins", sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f7f9fc;
-      color: #333;
-      line-height: 1.6;
-    }
-    header {
-      background: #1e3a8a;
-      color: white;
-      padding: 2rem 0;
-      text-align: center;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 10px;
-      font-weight: 500;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    .container {
-      max-width: 900px;
-      margin: auto;
-      padding: 2rem;
-    }
-    h1, h2 {
-      color: #1e3a8a;
-    }
-    img.profile {
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-      object-fit: cover;
-      margin: 1rem 0;
-    }
-    footer {
-      text-align: center;
-      padding: 1.5rem;
-      background: #1e3a8a;
-      color: white;
-      margin-top: 2rem;
-    }
-    .social a {
-      text-decoration: none;
-      color: #1e3a8a;
-      margin: 0 10px;
-      font-weight: bold;
-    }
-  </style>
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Personal website and portfolio of Mir Abdullah." />
+  <title>Mir Abdullah | Portfolio</title>
+  <link rel="stylesheet" href="/assets/css/styles.css" />
+  <script defer src="/js/main.js"></script>
+
 </head>
 <body>
-  <header>
-    <h1>Hello, I'm Mir Abdullah</h1>
-    <p>Web Developer | Designer | Creator</p>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
+  <header class="hero">
+
+<nav class="nav">
+  <a class="logo" href="/">Mir<span>Abdullah</span></a>
+  <input id="nav-toggle" type="checkbox" />
+  <label class="burger" for="nav-toggle" aria-label="Open menu">☰</label>
+  <div class="links">
+    <a href="/">Home</a>
+    <a href="/projects.html">Projects</a>
+    <a href="/about.html">About</a>
+    <a href="/contact.html">Contact</a>
+    <button id="theme-toggle" class="theme-btn" aria-label="Toggle dark mode">🌙</button>
+  </div>
+</nav>
+
+    <div class="hero-content">
+      <h1 class="reveal">Hello, I'm <span class="accent">Mir Abdullah</span></h1>
+      <p class="sub reveal">Web Developer | Designer | Automation Enthusiast</p>
+      <div class="cta reveal">
+        <a class="btn" href="#projects">View Projects</a>
+        <a class="btn ghost" href="/contact.html">Contact Me</a>
+      </div>
+    </div>
   </header>
 
-  <section id="about" class="container">
-    <h2>About Me</h2>
-    <img src="https://avatars.githubusercontent.com/u/9919?v=4" alt="Profile Picture" class="profile">
-    <p>
-      I’m a passionate web developer who enjoys building fast, modern, and visually engaging websites.
-      Currently exploring front-end frameworks and automation tools.
-    </p>
-  </section>
+  <main>
+    <section id="about" class="container section">
+      <h2 class="section-title reveal">About Me</h2>
+      <p class="reveal">
+        I build fast, modern, and accessible web experiences. Outside of code,
+        I enjoy process automation and knowledge systems. I'm currently exploring
+        static site workflows and Git best practices.
+      </p>
+    </section>
 
-  <section id="projects" class="container">
-    <h2>My Projects</h2>
-    <p>Here are some projects I’ve worked on recently:</p>
-    <ul>
-      <li><strong>Portfolio Site:</strong> A modern personal website using HTML, CSS, and JS.</li>
-      <li><strong>Automation Dashboard:</strong> Custom tools for chat and data management.</li>
-    </ul>
-  </section>
+    <section id="projects" class="container section">
+      <h2 class="section-title reveal">Featured Projects</h2>
+      <div class="grid reveal">
+        <article class="card">
+          <h3>Portfolio Site</h3>
+          <p>A sleek personal site built with HTML, CSS, and vanilla JS—optimized for GitHub Pages.</p>
+        </article>
+        <article class="card">
+          <h3>Automation Toolkit</h3>
+          <p>Lightweight scripts to streamline chat QA, KM, and reporting.</p>
+        </article>
+        <article class="card">
+          <h3>UI Experiments</h3>
+          <p>Micro-interactions and animations built without heavy frameworks.</p>
+        </article>
+      </div>
+    </section>
+  </main>
 
-  <section id="contact" class="container">
-    <h2>Contact Me</h2>
-    <p>Let’s connect on my socials:</p>
-    <div class="social">
-      <a href="https://github.com/mirabdullah" target="_blank">GitHub</a>
-      <a href="https://linkedin.com" target="_blank">LinkedIn</a>
-      <a href="https://twitter.com" target="_blank">Twitter</a>
-    </div>
-  </section>
-
-  <footer>
-    <p>© 2025 Mir Abdullah. All rights reserved.</p>
+  <footer class="footer">
+    <p>© <span id="year"></span> Mir Abdullah. All rights reserved.</p>
   </footer>
 </body>
 </html>
