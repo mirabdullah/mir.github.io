@@ -1,17 +1,104 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Mir’s Website</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mir Abdullah | Web Developer</title>
   <style>
-    body { font-family: Arial, sans-serif; text-align: center; margin: 0; padding: 2rem; }
-    h1 { color: #2c3e50; }
-    p { color: #555; }
+    body {
+      font-family: "Poppins", sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f7f9fc;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background: #1e3a8a;
+      color: white;
+      padding: 2rem 0;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: 500;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 2rem;
+    }
+    h1, h2 {
+      color: #1e3a8a;
+    }
+    img.profile {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin: 1rem 0;
+    }
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      background: #1e3a8a;
+      color: white;
+      margin-top: 2rem;
+    }
+    .social a {
+      text-decoration: none;
+      color: #1e3a8a;
+      margin: 0 10px;
+      font-weight: bold;
+    }
   </style>
 </head>
 <body>
-  <h1>👋 Hello, I’m Mir!</h1>
-  <p>Welcome to my first GitHub website.</p>
+  <header>
+    <h1>Hello, I'm Mir Abdullah</h1>
+    <p>Web Developer | Designer | Creator</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about" class="container">
+    <h2>About Me</h2>
+    <img src="https://avatars.githubusercontent.com/u/9919?v=4" alt="Profile Picture" class="profile">
+    <p>
+      I’m a passionate web developer who enjoys building fast, modern, and visually engaging websites.
+      Currently exploring front-end frameworks and automation tools.
+    </p>
+  </section>
+
+  <section id="projects" class="container">
+    <h2>My Projects</h2>
+    <p>Here are some projects I’ve worked on recently:</p>
+    <ul>
+      <li><strong>Portfolio Site:</strong> A modern personal website using HTML, CSS, and JS.</li>
+      <li><strong>Automation Dashboard:</strong> Custom tools for chat and data management.</li>
+    </ul>
+  </section>
+
+  <section id="contact" class="container">
+    <h2>Contact Me</h2>
+    <p>Let’s connect on my socials:</p>
+    <div class="social">
+      <a href="https://github.com/mirabdullah" target="_blank">GitHub</a>
+      <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+      <a href="https://twitter.com" target="_blank">Twitter</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Mir Abdullah. All rights reserved.</p>
+  </footer>
 </body>
 </html>
